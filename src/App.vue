@@ -5,7 +5,8 @@ import { useQuery } from '@vue/apollo-composable'
 const CHARACTERS_QUERY = gql`
 query{
   tradePairs {
-    id
+    id,
+    trx
   }
 }
 `
