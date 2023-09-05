@@ -10,7 +10,7 @@ const cache = new InMemoryCache()
 
 const apolloClient = new ApolloClient({
   cache,
-  uri: 'https://api.thegraph.com/subgraphs/name/chimpytuts/darkpools-mainarbitrum/graphql',
+  uri: 'https://api.thegraph.com/subgraphs/name/chimpytuts/darkpools-main-arbitrum',
 })
 
 const app = createApp({
