@@ -1,25 +1,15 @@
 <script setup>
-import gql from 'graphql-tag'
-import { useQuery } from '@vue/apollo-composable'
+import MainComponent from './view/MainComponent.vue';
 
-const CHARACTERS_QUERY = gql`
-query{
-  tradePairs {
-    id
-  }
-}
-`
-const { result, loading, error } = useQuery(CHARACTERS_QUERY);
 
-console.log(result.value, "result", error.value, loading.value)
 </script>
 
 <template>
-  <p v-if="error">Error...</p>
-  <p v-if="loading">Loading...</p>
-  <!-- <p v-else v-for="character in result.characters.results" :key="character.id">
+  swap
+  <p v-for="character in result" :key="character.id">
     {{ character.name }}
-  </p> -->
+  </p>
+  <main-component/>
 </template>
 
 <style scoped>
