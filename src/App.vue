@@ -5,10 +5,6 @@ import MainComponent from './view/MainComponent.vue';
 </script>
 
 <template>
-  swap
-  <p v-for="character in result" :key="character.id">
-    {{ character.name }}
-  </p>
   <main-component/>
 </template>
 
